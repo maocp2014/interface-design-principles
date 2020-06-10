@@ -48,7 +48,7 @@ func (c *Computer) DoWork() {
 
 // Intel 公司
 type IntelCPU struct {
-	CPU
+	CPU  // 继承接口  可不写， golang接口默认是非侵入式的
 }
 
 func (intelCPU *IntelCPU) calculate() {
